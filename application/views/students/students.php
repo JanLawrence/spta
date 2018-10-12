@@ -18,7 +18,8 @@
                             <thead>
                             <tr>
 <!--                                <th>#</th>-->
-                                <th>School ID</th>
+                                <!-- <th>School ID</th> -->
+                                <th>School Number</th>
                                 <th>Student Name</th>
 <!--                                <th>First Name</th>-->
 <!--                                <th>Middle Name</th>-->

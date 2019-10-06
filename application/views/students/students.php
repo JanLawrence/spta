@@ -4,7 +4,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h4>Students</h4>
+                        <h4>List of Students</h4>
                     </div>
                     <div class="col-sm-6" align="right">
                         <a href="<?= base_url('students/add')?>">
@@ -20,7 +20,7 @@
 <!--                                <th>#</th>-->
                                 <!-- <th>School ID</th> -->
                                 <th>School Number</th>
-                                <th>Student Name</th>
+                                <th>Name of Student</th>
 <!--                                <th>First Name</th>-->
 <!--                                <th>Middle Name</th>-->
 <!--                                <th>Last Name</th>-->
@@ -48,13 +48,6 @@
                                             $enc = new EncryptPass();
                                             ?>
                                             <tr>
-<!--                                                <td>--><?//= ++$i ?><!--</td>-->
-                                                <td><?= $each->school_id ?></td>
-                                                <td><?= $each->first_name.' '.$each->middle_name.' '.$each->last_name ?></td>
-<!--                                                <td><?= $each->first_name ?></td>-->
-<!--                                                <td><?= $each->middle_name ?></td>-->
-<!--                                                <td><?= $each->last_name ?></td>-->
-<!--                                                <td><?= $each->phone ?></td>-->
                                                 <td ><?= $Scredentials[0]->username ?></td>
                                                 <td ><?= $enc->pass_crypt($Scredentials[0]->password,'d') ?></td>
                                                 <td><?= $guardian[0]->first_name ?> <?= $guardian[0]->last_name ?></td>
@@ -73,13 +66,11 @@
                                                             Delete
                                                         </button>
                                                     </a>
-
                                                 </td>
                                             </tr>
                                             <?php
                                         }
                                     }
-
                                 ?>
                             </tbody>
                         </table>

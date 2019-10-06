@@ -4,7 +4,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h4>Teachers</h4>
+                        <h4>List of Teachers</h4>
                     </div>
                     <div class="col-sm-6" align="right">
                         <a href="<?= base_url('teachers/add')?>">
@@ -64,13 +64,11 @@
                                                             Delete
                                                         </button>
                                                     </a>
-
                                                 </td>
                                             </tr>
                                             <?php
                                         }
                                     }
-
                                 ?>
                             </tbody>
                         </table>
